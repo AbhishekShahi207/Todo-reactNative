@@ -1,4 +1,5 @@
 import { createHomeStyles } from "@/assets/styles/home.styles";
+import Header from "@/components/Header";
 import useTheme from "@/hooks/useTheme";
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
@@ -13,6 +14,7 @@ const Index = () => {
     <LinearGradient colors={colors.gradients.background} style={homeStyles.container}>
       <StatusBar barStyle={colors.statusBarStyle}/>
       <SafeAreaView style={homeStyles.safeArea}>
+        <Header/>
         <TouchableOpacity onPress={toggleDarkMode}>
           <Text>ToggleDark</Text>
         </TouchableOpacity>
