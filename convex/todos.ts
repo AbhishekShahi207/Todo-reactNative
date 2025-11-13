@@ -25,7 +25,7 @@ export const addTodo = mutation({
   },
 });
 
-// export const toggleTodo = mutation({
+//toggle todo
 export const toggleTodo = mutation({
   args: { id: v.id("todos") },
   handler: async (ctx, args) => {
